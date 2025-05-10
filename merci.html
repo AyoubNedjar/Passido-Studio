@@ -7,31 +7,85 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
+      margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #f5f7fa;
+      background: linear-gradient(135deg, #4a4ee7, #7f51ff);
+      color: #333;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      text-align: center;
       padding: 20px;
     }
-    .box {
-      background-color: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    .container {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+      padding: 40px 30px;
+      text-align: center;
+      animation: fadeIn 0.8s ease-out;
     }
     h1 {
+      margin-bottom: 20px;
       color: #4a4ee7;
+      font-size: 2.2rem;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+    .btn-home {
+      display: inline-block;
+      background: linear-gradient(135deg, #4a4ee7, #7f51ff);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .btn-home:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+    .socials {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .socials a {
+      color: #4a4ee7;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .socials a:hover {
+      color: #2f2fa0;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <div class="box">
+  <div class="container">
     <h1>Merci !</h1>
-    <p>Nous avons bien reçu votre message. Nous vous répondrons très vite !</p>
-    <a href="index.html">← Retour à l'accueil</a>
+    <p>Votre message a bien été envoyé.<br>Nous vous recontacterons sous 24 heures pour discuter de votre projet.</p>
+    <a href="index.html" class="btn-home">← Retour à l'accueil</a>
+
+    <div class="socials">
+      <!-- Remplace # par tes vrais profils -->
+      <a href="#" aria-label="LinkedIn"><svg width="24" height="24" fill="currentColor"><use xlink:href="#icon-linkedin"/></svg></a>
+      <a href="#" aria-label="Twitter"><svg width="24" height="24" fill="currentColor"><use xlink:href="#icon-twitter"/></svg></a>
+      <a href="#" aria-label="GitHub"><svg width="24" height="24" fill="currentColor"><use xlink:href="#icon-github"/></svg></a>
+    </div>
   </div>
+
+ 
 </body>
 </html>

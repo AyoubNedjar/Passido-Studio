@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Passido Design| Demande de projet</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<script>
+    function switchToEquipe() {
+      document.getElementById('blockContainer').classList.remove('show-confiance');
+      document.getElementById('blockContainer').classList.add('show-equipe');
+    }
+  
+    function switchToConfiance() {
+      document.getElementById('blockContainer').classList.remove('show-equipe');
+      document.getElementById('blockContainer').classList.add('show-confiance');
+    }
+    
+  </script>
+  
+<body>
+
+    <header class="header">
+        <img src="passidologo.png" alt="Passido Studio" class="logo-rounded">
+    </header>
+  <!-- SECTION LEFT PANEL -->
+  <section class="left-panel">
+    <div class="content">
+      <h1>Une solution digitale sur-mesure,<br>pensée pour votre activité.</h1>
+      <p class="intro">Passido Studio vous aide à créer des outils modernes pour vos besoins professionnels : entreprises, indépendants, startups.</p>
+
+      <div class="services">
+        <div class="service-box">
+          <h3>🖥 Site vitrine</h3>
+          <p>Valorisez votre image avec un site clair, rapide et responsive.</p>
+        </div>
+        <div class="service-box">
+          <h3>📱 Application mobile</h3>
+          <p>Apps iOS / Android sur mesure en React Native ou Flutter.</p>
+        </div>
+        <div class="service-box">
+          <h3>🌐 Application web</h3>
+          <p>Outils internes, dashboards ou portails clients performants.</p>
+        </div>
+        <div class="service-box">
+          <h3>🛒 E-commerce</h3>
+          <p>Boutique en ligne rapide, ergonomique et facile à gérer.</p>
+        </div>
+        <div class="service-box">
+          <h3>🧠 Intégration IA</h3>
+          <p>Ajoutez des fonctions intelligentes à vos projets : chatbots, automatisation…</p>
+        </div>
+        <div class="service-box">
+          <h3>🔍 SEO</h3>
+          <p>Optimisation Google pour attirer plus de clients ciblés.</p>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <p><strong>+20 projets réalisés</strong> pour entrepreneurs, coachs, PME et créateurs en ligne.</p>
+      </div>
+
+      <div class="cta">
+        <a href="#contact-form" class="cta-button">Discutons de votre projet</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="switch-section">
+    <div class="block-container show-confiance" id="blockContainer">
+      
+      <div class="block-slider">
+      <!-- Bloc Zone de Confiance -->
+        <div class="block-content block-confiance">
+          <h2>Pourquoi choisir Passido Studio ?</h2>
+          <div class="trust-items">
+            <div class="trust-box">
+              <h3>💸 Devis 100% gratuit</h3> 
+              <p>Expliquez-nous votre projet, on vous propose une solution sans engagement.</p>
+            </div>
+            <div class="trust-box">
+              <h3>⏱ Réponse rapide</h3>
+              <p>On vous répond dans les 24h, avec clarté et transparence.</p>
+            </div>
+            <div class="trust-box">
+              <h3>🔒 Professionnalisme</h3>
+              <p>Projets livrés avec succès. Sérieux, qualité et respect des délais.</p>
+            </div>
+          </div>
+          <button class="switch-btn" onclick="switchToEquipe()">Voir l'équipe →</button>
+        </div>
+    
+        <!-- Bloc Équipe -->
+        <div class="block-content block-equipe">
+          <h2>Une équipe de passionnés derrière chaque projet</h2>
+          <p>Nous sommes <strong>6 experts du digital</strong> réunis sous Passido Studio : développeurs front-end, back-end, designers UX/UI et spécialistes en IA.</p>
+          <p>Chaque membre de l’équipe apporte une expertise complémentaire pour garantir des projets solides, modernes et adaptés à vos besoins spécifiques.</p>
+          <p>Notre philosophie : allier efficacité technique, esthétique soignée et compréhension métier. Que vous soyez indépendant, PME ou startup, nous concevons avec vous des solutions digitales évolutives, sécurisées et prêtes à performer.</p>
+          <p>Chez Passido Studio, vous n’êtes pas un simple client : vous devenez un partenaire à part entière de notre processus créatif.</p>
+          <button class="switch-btn" onclick="switchToConfiance()">← Retour</button>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- SECTION FORMULAIRE -->
+  <section class="form-section-split" id="contact-form">
+    <div class="form-left">
+      <h2>Et si on créait quelque chose ensemble ?</h2>
+      <p>Expliquez-nous ce que vous imaginez — on vous accompagne avec expertise et clarté.</p>
+      <ul>
+        <li>🌐 Site web moderne</li>
+        <li>📱 App mobile ou web</li>
+        <li>🧠 Fonctionnalité IA</li>
+        <li>🚀 Accompagnement technique</li>
+      </ul>
+      <p><strong>Réponse rapide garantie ✅</strong></p>
+    </div>
+  
+    <div class="form-right">
+      <h2>Demandez votre projet</h2>
+      <p>Remplissez ce formulaire, on vous répond rapidement.</p>
+      
+      <form action="https://formsubmit.co/passidodesign@gmail.com" method="POST" class="contact-form">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/merci.html">
+  
+        <div class="form-group">
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+  
+        <button type="submit">Envoyer ma demande</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Passido Studio — Tous droits réservés</p>
+      <p>📧 <a href="mailto:passidodesign@gmail.com">passidodesign@gmail.com</a></p>
+    </div>
+  </footer>
+  
+</body>
+</html>
